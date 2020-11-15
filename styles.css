@@ -293,13 +293,49 @@ progress::-webkit-progress-bar {
   height: 30px;
   background-color: #ff8906;
 }
-/* iframe {
+
+/* SEPTIMA PAGINA */
+.septima-pagina {
+  height: 700px;
+}
+#titulo-prezi {
+  color: #ff8906;
+  position: relative;
+  top: 150px;
+  left: 100px;
+  float: left;
+}
+#prezi {
   width: 700px;
   height: 400px;
-  display: block;
-  margin: 0px auto;
-} */
-#prueba {
+  position: relative;
+  left: 300px;
+  float: left;
+}
+.collage-container {
+  position: relative;
+  top: 20px;
+}
+#titulo-collage {
+  color: #ff8906;
+  position: relative;
+  top: 460px;
+}
+#descripcion-collage {
+  position: relative;
   color: white;
+  top: 475px;
+  right: 300px;
+  font-size: 28px;
+}
+#collage {
+  position: relative;
+  top: 100px;
+  left: 100px;
+  width: 500px;
+  height: 300px;
+}
+/* OCTAVA PAGINA  */
+.octava-pagina {
   height: 700px;
 }

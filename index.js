@@ -93,7 +93,7 @@ window.onload = function() {
     if (i<=val)
         {
             document.querySelector(id).setAttribute("value",i);   //subo el valor de la barra de progreso
-            document.querySelector(id+"+ span").innerHTML = i;    //subo el porcentaje y lo muestro en span
+            document.querySelector(id+"+ span").innerHTML = i + "/29";    //subo el porcentaje y lo muestro en span
             i += 0.5; //lo sumo de a o.5 para que vaya mas lento
             fpAnimationFrame(animacion);       //mientras que el contador no llegue se vuelve a ejecutar la funcion
         }
