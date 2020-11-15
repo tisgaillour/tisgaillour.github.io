@@ -239,15 +239,20 @@ td {
   font-size: larger;
 }
 /* QUINTA PAGINA */
+.quinta-pagina {
+  height: 1900px;
+}
 #titulo-valores {
   color: #ff8906;
   text-align: center;
 }
 .valores {
-  list-style: none;
-  margin: none;
-  width: 100px;
-  height: 20px;
+  font-size: 24px;
   position: relative;
+  display: block;
+  padding: 20px;
+  width: 100px;
+  height: 50px;
+  list-style: none;
   color: white;
 }

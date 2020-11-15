@@ -17,8 +17,8 @@ ScrollReveal().reveal("#actualidad", { delay: 500 })
 // agarrar todos los valores
 var valores = document.getElementsByClassName('valores');
 // conseguir ancho y alto de la pagina
-var ancho = 1200;
-var alto = 700;
+var ancho = 1100;
+var alto = 300;
 
 // for loop para realizar la accion para todos los items de la lista
 for ( var i=0; i < valores.length; i++ ) {
@@ -30,10 +30,11 @@ for ( var i=0; i < valores.length; i++ ) {
     randomTop = getRandomNumber(0, alto);
     randomLeft = getRandomNumber(0, ancho);
     
+    
     // pasarle la posision en la que tienen que estar
     valor.style.top = randomTop +"px";
     valor.style.left = randomLeft +"px";
-    
+
 }
 
 //funcion que devuelve un numero random entre el minimo y el maximo 
