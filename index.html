@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="primera-pagina"> 
@@ -17,10 +18,10 @@
             <h1 id="nombre">JUAN IGNACIO GAILLOUR</h1>
         </div>
         <div class="cara">
-            <img src="imagenes\codeo.svg" alt="Programar" id="juani">
-            <img src="imagenes\coffeeo.svg" alt="Café" id="juani">
-            <img src="imagenes\monitoro.svg" alt="CPU" id="juani">
-            <img src="imagenes\musico.svg" alt="Musica" id="juani">
+            <img src="imagenes\codeo.svg" data-aos-duration="3000" data-aos="fade-down-right"alt="Programar" id="juani">
+            <img src="imagenes\coffeeo.svg" data-aos-duration="3000" data-aos="fade-down-left"alt="Café" id="juani">
+            <img src="imagenes\monitoro.svg" data-aos-duration="3000" data-aos="fade-up-right"alt="CPU" id="juani">
+            <img src="imagenes\musico.svg" data-aos-duration="3000" data-aos="fade-up-left"alt="Musica" id="juani">
         </div>   
     </div>
     <div class="segunda-pagina">
@@ -36,14 +37,14 @@
     </div>
     <div class="tercera-pagina">
         <h1 id="titulo-linea">Linea de tiempo</h1>
-        <p id="jardin">Durante mi infancia vivi en cordoba y Buenos Aires, fui a muchos jardines</p>
-        <p id="sala-5">En sala de 5 me vine a Mar del Plata</p>
-        <p id="primer-grado">Arranque primer grado en el tejedor</p>
-        <p id="grado-5">En 5to grado me fui a vivir a Buenos Aires</p>
-        <p id="grado-6">Volvi al tejedor en 6to grado y todavia sigo ahi</p>
-        <p id="comienzos">Me empiezo a interesar en la ingenieria</p>
-        <p id="interes">Pierdo el interes por unos años y no se exactamente que me gusta</p>
-        <p id="actualidad">En la actualidad me interesa la ingenieria en sistemas o todo lo relacionado con la programación.</p>
+        <p id="jardin" data-aos="fade-right">Durante mi infancia vivi en cordoba y Buenos Aires, fui a muchos jardines</p>
+        <p id="sala-5" data-aos="fade-left">En sala de 5 me vine a Mar del Plata</p>
+        <p id="primer-grado"data-aos="fade-right">Arranque primer grado en el tejedor</p>
+        <p id="grado-5" data-aos="fade-left">En 5to grado me fui a vivir a Buenos Aires</p>
+        <p id="grado-6"data-aos="fade-right">Volvi al tejedor en 6to grado y todavia sigo ahi</p>
+        <p id="comienzos" data-aos="fade-left">Me empiezo a interesar en la ingenieria</p>
+        <p id="interes" data-aos="fade-right">Pierdo el interes por unos años y no se exactamente que me gusta</p>
+        <p id="actualidad" data-aos="fade-left">En la actualidad me interesa la ingenieria en sistemas o todo lo relacionado con la programación.</p>
         <div id="linea"></div>
     </div>
     <div class="cuarta-pagina">
@@ -97,24 +98,24 @@
     </div>
     <div class="quinta-pagina">
         <h1 id="titulo-valores">Valores</h1>
-        <div class="valores">Aventura</div>
-        <div class="valores">Riesgo</div>
-        <div class="valores">Humildad</div>
-        <div class="valores">Amistad</div>
-        <div class="valores">Autodesarrollo</div>
-        <div class="valores">Solidaridad</div>
-        <div class="valores">Libertad</div>
-        <div class="valores">Creatividad</div>
-        <div class="valores">Agradecimiento</div>
-        <div class="valores">Objetividad</div>
-        <div class="valores">Respeto</div>
-        <div class="valores">Curiosidad</div>
-        <div class="valores">Verdad</div>
-        <div class="valores">Coherencia</div>
-        <div class="valores">Salud</div>
-        <div class="valores">Familia</div>
-        <div class="valores">Progreso</div>
-        <div class="valores">Confianza</div>
+        <div class="valores" data-aos="fade-up">Aventura</div>
+        <div class="valores" data-aos="fade-right">Riesgo</div>
+        <div class="valores" data-aos="fade-left">Humildad</div>
+        <div class="valores" data-aos="fade-down">Amistad</div>
+        <div class="valores" data-aos="fade-up">Autodesarrollo</div>
+        <div class="valores" data-aos="fade-right">Solidaridad</div>
+        <div class="valores" data-aos="fade-up">Libertad</div>
+        <div class="valores" data-aos="fade-left">Creatividad</div>
+        <div class="valores" data-aos="fade-left">Agradecimiento</div>
+        <div class="valores" data-aos="fade-right">Objetividad</div>
+        <div class="valores" data-aos="fade-down">Respeto</div>
+        <div class="valores" data-aos="fade-down">Curiosidad</div>
+        <div class="valores" data-aos="fade-up">Verdad</div>
+        <div class="valores" data-aos="fade-left">Coherencia</div>
+        <div class="valores" data-aos="fade-right">Salud</div>
+        <div class="valores" data-aos="fade-left">Familia</div>
+        <div class="valores" data-aos="fade-up">Progreso</div>
+        <div class="valores" data-aos="fade-down">Confianza</div>
     </div>
     <div class="sexta-pagina">
         <h1 id="titulo-personalidad">Personalidad</h1>
@@ -160,5 +161,9 @@
     </div>
     <!-- <h4>Ver codigo <a href="https://www.github.com/tisgaillour/tisgaillour.github.io">aca</a></h4>     -->
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
