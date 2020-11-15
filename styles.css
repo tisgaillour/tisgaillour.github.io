@@ -238,3 +238,16 @@ td {
   margin: 30px;
   font-size: larger;
 }
+/* QUINTA PAGINA */
+#titulo-valores {
+  color: #ff8906;
+  text-align: center;
+}
+.valores {
+  list-style: none;
+  margin: none;
+  width: 100px;
+  height: 20px;
+  position: relative;
+  color: white;
+}
