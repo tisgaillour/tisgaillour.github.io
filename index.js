@@ -51,3 +51,56 @@ for (i = 0; i < valores.length; i++){
     //el valor de i se le suma al delay asi va creciendo para que el siguiente valor tarde mas en mostrarse
     ScrollReveal().reveal(".valores", {delay:500+ i})
 }
+
+window.onload = function() { 
+		
+		animateprogress("#realista",13);
+		animateprogress("#investigador",20);
+		animateprogress("#artistico",10);
+		animateprogress("#social",6);
+		animateprogress("#emprendedor",5);
+		animateprogress("#convencional",7);
+		
+	} 	
+	document.querySelector ("#boton").addEventListener ("click", function() {   //hago que sse vuelva a llamar la funcion cuando apreto el boton
+		animateprogress("#realista",13);
+		animateprogress("#investigador",20);
+		animateprogress("#artistico",10);
+		animateprogress("#social",6);
+		animateprogress("#emprendedor",5);
+		animateprogress("#convencional",7);
+   
+  });
+
+  function animateprogress (id, val){    
+ 
+ 
+    var getRequestAnimationFrame = function () {  
+        return window.requestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||  
+        window.mozRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        function ( callback ){
+            window.setTimeout(enroute, 1 / 1 * 1);
+        };
+         
+    };
+     
+    var fpAnimationFrame = getRequestAnimationFrame();   
+    var i = 0;
+    var animacion = function () {
+             
+    if (i<=val)
+        {
+            document.querySelector(id).setAttribute("value",i);   //subo el valor de la barra de progreso
+            document.querySelector(id+"+ span").innerHTML = i;    //subo el porcentaje y lo muestro en span
+            i++;
+            fpAnimationFrame(animacion);       //mientras que el contador no llegue se vuelve a ejecutar la funcion
+        }
+                                         
+    }
+        //llamo a la funcion x primera vez
+        fpAnimationFrame(animacion);   
+                 
+}

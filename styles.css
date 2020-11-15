@@ -240,7 +240,7 @@ td {
 }
 /* QUINTA PAGINA */
 .quinta-pagina {
-  height: 2000px;
+  height: 1900px;
 }
 #titulo-valores {
   color: #ff8906;
@@ -255,4 +255,41 @@ td {
   height: 50px;
   list-style: none;
   color: white;
+}
+/* SEXTA PAGINA */
+.sexta-pagina {
+  height: 700px;
+}
+#titulo-personalidad {
+  text-align: center;
+  color: #ff8906;
+}
+.progress {
+  color: white;
+}
+.center {
+  text-align: center;
+}
+progress[value] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  width: 270px;
+  height: 30px;
+  overflow: hidden;
+  background-color: #d8d8d8;
+}
+progress::-webkit-progress-value {
+  background: #ff8906;
+}
+progress::-webkit-progress-bar {
+  background-color: #d8d8d8;
+}
+#boton {
+  margin-top: 20px;
+  border: none;
+  width: 100px;
+  height: 30px;
+  background-color: #ff8906;
 }
