@@ -293,3 +293,9 @@ progress::-webkit-progress-bar {
   height: 30px;
   background-color: #ff8906;
 }
+/* iframe {
+  width: 700px;
+  height: 400px;
+  display: block;
+  margin: 0px auto;
+} */

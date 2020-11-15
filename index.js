@@ -82,7 +82,7 @@ window.onload = function() {
         window.oRequestAnimationFrame ||
         window.msRequestAnimationFrame ||
         function ( callback ){
-            window.setTimeout(enroute, 1 / 1 * 1);
+            window.setTimeout(enroute, 1 / 60 * 1000);
         };
          
     };
@@ -95,7 +95,7 @@ window.onload = function() {
         {
             document.querySelector(id).setAttribute("value",i);   //subo el valor de la barra de progreso
             document.querySelector(id+"+ span").innerHTML = i;    //subo el porcentaje y lo muestro en span
-            i++;
+            i += 0.5; //lo sumo de a o.5 para que vaya mas lento
             fpAnimationFrame(animacion);       //mientras que el contador no llegue se vuelve a ejecutar la funcion
         }
                                          
