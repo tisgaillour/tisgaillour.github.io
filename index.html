@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIS</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TIS</title>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+        </div>
+    </div>
     <div class="primera-pagina"> 
         <div class="navbar">
             <h4 id="titulo">TRABAJO FINAL TIS II </h4>
@@ -30,7 +50,7 @@
             <p id="definicion">La vocación es la inclinación que una persona siente para dedicarse a un modo de vida, y puede estar relacionada tanto
             con lo profesional (trabajo, carrera) como con lo espiritual. 
             
-            En nuestra vocación intervienen muchos aspectos: nuestros gustos e intereses, las cosas que nos reconfortan y nos causan
+            En nuestra vocación intervienen muchos aspectos: nuestros gustos e intereses, las cosas que nos causan
             curiosidad, las habilidades que tenemos o que hemos aprendido, así como nuestra personalidad, nuestra forma de ser y de
             actuar, de asumir y enfrentar las cosas.</p>
         </div>
@@ -166,9 +186,16 @@
         </div>
     </div>
     <div class="octava-pagina">
+        <h1 id="cip" data-aos="fade-right">CIP</h1>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <figure class="highcharts-figure">
+            <div id="container"></div>
+            <p class="highcharts-description">
+                Tabla con los resultados de el test CIP
+            </p>
+        </figure>
     </div>
     <!-- <h4>Ver codigo <a href="https://www.github.com/tisgaillour/tisgaillour.github.io">aca</a></h4>     -->
-    <script src="index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
