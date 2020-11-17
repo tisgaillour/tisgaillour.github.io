@@ -448,9 +448,19 @@ progress::-webkit-progress-bar {
   height: 70px;
   color: #ff8906;
   position: relative;
-  left: 200px;
-  top: 450px;
+  left: 100px;
+  top: 300px;
   font-size: 50px;
+}
+#resultados {
+  margin: 0px;
+  position: relative;
+  width: 300px;
+  font-size: 20px;
+  color: white;
+  top: 300px;
+  left: 100px;
+  float: left;
 }
 #container {
   height: 400px;
@@ -497,6 +507,35 @@ progress::-webkit-progress-bar {
   background: #f1f7ff;
 }
 .highcharts-description {
+  color: white;
+  text-align: center;
+}
+
+/* NOVENA PAGINA */
+.novena-pagina {
+  height: 700px;
+}
+#titulo-conclusion {
+  float: left;
+  color: #ff8906;
+  position: relative;
+  left: 200px;
+  top: 350px;
+}
+#conclusion {
+  float: left;
+  width: 600px;
+  font-size: 25px;
+  color: white;
+  position: relative;
+  top: 300px;
+  left: 500px;
+}
+
+/* FOOTER */
+.footer {
+  position: relative;
+  top: 200px;
   color: white;
   text-align: center;
 }
